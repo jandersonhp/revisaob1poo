@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado POO · Anhanguera ADS 4º Semestre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão de Tema (cicla entre 3 temas) -->
+    <button class="theme-toggle" id="themeToggle" title="Alternar tema">🌙</button>
+
+    <div class="app-container">
+        <!-- HOME -->
+        <div id="homeScreen" class="home-screen">
+            <div class="badge">Faculdade Anhanguera · ADS 4º Semestre</div>
+            <h1>Simulado POO</h1>
+            <div class="subhead">Programação Orientada a Objetos</div>
+            <div class="institution">Preparatório para a prova · 3 simulados completos</div>
+            <div class="action-grid">
+                <button class="btn btn-primary" data-sim="1">📘 Simulado 1</button>
+                <button class="btn btn-primary" data-sim="2">📗 Simulado 2</button>
+                <button class="btn btn-primary" data-sim="3">📙 Simulado 3</button>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="fonte.pdf" target="_blank" class="source-link" id="openSourceBtn">
+                    📄 Fonte: conteúdo completo (PDF)
+                </a>
+            <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted); max-width: 600px;">
+                Arquivo de estudos disponibilizado por: <strong>Luana</strong>
+            </p>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted); max-width: 600px;">
+                Cada simulado contém 10 questões (8 múltipla escolha e 2 discursivas). 
+                A pontuação total é de 1000 pontos. Feedback imediato com explicações.
+            </p>
+        </div>
+
+        <!-- SIMULADO CONTAINER -->
+        <div id="simuladoScreen" class="simulado-screen">
+            <div class="simulado-header">
+                <button class="back-btn" id="backHomeBtn">← Voltar</button>
+                <div class="score-box" id="scoreDisplay">0 <span>/ 1000</span></div>
+            </div>
+            <div id="questionsContainer" class="questions-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
